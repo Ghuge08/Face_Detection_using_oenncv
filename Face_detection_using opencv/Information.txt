@@ -1,0 +1,33 @@
+FACE_DETECTION USING IMAGE
+
+
+Step 1: Collect tons if faces.
+
+Step 2: Make them black and white because our haar cascade algorithm works on 
+        gray scale images only.
+       
+Step 3 : Train the algorithm to detect faces.
+
+we use cascade classifier to detect the face.
+image is matrix of bunch of pixels with numbers and bits
+
+detectMultiscale detect object of different seizes no matter what is the
+scale of the object i.e small or big
+Object are detected and returned as list of rectangles co-ordinates.
+
+Haar Cascade algorithm
+haar is a chain of event.
+This algorithm uses haar feature to process the image
+There are two types of haar features
+ 1. Edge feature
+ 2. Line feature
+Black and white portion allow us to approximate relationship of pixels
+
+Image is made of the various pixels. White portion of the image  have more 
+pixel and black portion has less. So white pixel add it all pixels also the 
+black pixel. After addding we subtract them. If their difference is in
+between specific value them we can say that image is detected. 
+
+By spreading features all over the image and cascading down all different 
+layers to locate matches, we chain all 5 features and their combination 
+provides you entire template of image.
